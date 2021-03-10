@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-google-analytics",
-  "version": "1.9.0",
+  "version": "1.8.5",
   "description": "Google Universal Analytics Plugin",
   "cordova": {
     "id": "cordova-plugin-google-analytics",
@@ -27,6 +27,5 @@
     "universalanalytics"
   ],
   "author": "Dan Wilson",
-  "license": "MIT",
-  "types": "./typescript/analytics.d.ts"
+  "license": "MIT"
 }

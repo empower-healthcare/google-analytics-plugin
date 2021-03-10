@@ -3,9 +3,7 @@
 
 #import <Foundation/Foundation.h>
 #import <Cordova/CDV.h>
-#import <GoogleAnalytics/GAI.h>
-#import <GoogleAnalytics/GAIFields.h>
-#import <GoogleAnalytics/GAIDictionaryBuilder.h>
+#import "GAI.h"
 
 @interface UniversalAnalyticsPlugin : CDVPlugin {
     bool _trackerStarted;
