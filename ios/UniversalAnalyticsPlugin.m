@@ -54,9 +54,9 @@
 
 - (void) addCustomDimensionsToTracker: (id<GAITracker>)tracker
 {
+@try {
     if (_customDimensions) {
       for (NSString *key in _customDimensions.allKeys) {
-@try {
         NSString *value = [_customDimensions objectForKey:key];
 
         NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
@@ -66,11 +66,11 @@
         /* NSLog(@"Setting tracker dimension slot %@: <%@>", key, value); */
         [tracker set:[GAIFields customDimensionForIndex:myKey.unsignedIntegerValue]
         value:value];
+      }
+    }
 }
 @catch (NSException *exception) {
 }
-      }
-    }
 }
 
 - (void) getVar: (CDVInvokedUrlCommand*) command
